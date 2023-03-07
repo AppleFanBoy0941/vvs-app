@@ -28,7 +28,7 @@ export default function AnimatedNumbers({ number }) {
 						}}
 						className='inline-block'
 					>
-						{num}
+						{num.replace('.', ',')}
 					</motion.span>
 				)
 			})}

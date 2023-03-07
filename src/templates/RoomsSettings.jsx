@@ -99,21 +99,24 @@ export default function RoomsSettings({ sortList, setSortList }) {
 					</motion.ul>
 				)}
 			</AnimatePresence>
-			<div className='gap-2 hidden lg:flex w-full flex-shrink'>
+			<div className='gap-2 hidden lg:flex w-full flex-shrink min-w-0'>
 				<Setting
 					variable={variables.height}
 					setVariable={setHeight}
 					label='Højde'
+					step={0.1}
 				/>
 				<Setting
 					variable={variables.airChange}
 					setVariable={setAirChange}
 					label='Luftskifte'
+					step={0.1}
 				/>
 				<Setting
 					variable={variables.ratio}
 					setVariable={setRatio}
 					label='Ind/ud'
+					step={0.01}
 				/>
 			</div>
 			<motion.button

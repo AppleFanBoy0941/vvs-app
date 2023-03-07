@@ -12,7 +12,7 @@ function App() {
 				{/* RoomsProvider indeholder informationerne om vores rum. Det er en liste (eller et array) af objekter, hvor vi kan se rummets størrelse og andre detaljer. Når vi skal justere et rum, er det gennem denne kontekst */}
 				<VariablesProvider>
 					{/* VariablesProvider har vores variabler: loftshøjde, luftskifte og ind/ud-forhold i et objekt. Den gør det muligt for os at udregne de forskellige ting */}
-					<div className='h-screen w-screen overflow-hidden'>
+					<div className='h-screen w-screen overflow-hidden cursor-default'>
 						<ListView />
 						<Navigation />
 					</div>

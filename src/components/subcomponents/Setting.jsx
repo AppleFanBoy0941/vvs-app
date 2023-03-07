@@ -7,7 +7,7 @@ export default function Setting({
 }) {
 	return (
 		<label
-			className={`flex flex-col flex-shrink px-6 py-4 ${
+			className={`flex flex-col flex-shrink px-6 py-4 min-w-0 ${
 				fullWidth
 					? 'bg-slate-100/75 dark:bg-slate-600/75'
 					: 'bg-slate-100/25 dark:bg-slate-600/25'
