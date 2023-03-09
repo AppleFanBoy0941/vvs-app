@@ -45,7 +45,7 @@ export default function ListView() {
 						initial='hidden'
 						animate='visible'
 						exit='exit'
-						className='max-w-4xl w-full h-[calc(100%-6rem)] flex flex-col gap-6'
+						className='max-w-4xl w-full h-[calc(100%-6.5rem)] flex flex-col gap-6'
 					>
 						<RoomsSettings sortList={sortList} setSortList={setSortList} />
 						<RoomsList sortList={sortList} />

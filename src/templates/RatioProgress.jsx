@@ -33,21 +33,18 @@ export default function RatioProgress() {
 			}}
 			className='flex flex-col overflow-hidden relative rounded-4xl bg-slate-100/25 dark:bg-slate-800 shadow-brand-base-light dark:shadow-brand-base-dark flex-shrink-0'
 		>
-			<div
-				className='w-full h-20 sm:h-16 bg-white dark:bg-black'
-				style={{
-					filter: 'blur(3px) contrast(25)',
-					mixBlendMode: 'screen',
-				}}
-			>
-				<div className='absolute top-1/2 -translate-y-1/2 left-6 right-6 h-2 bg-black dark:bg-white rounded-full opacity-70' />
+			<div className='relative w-full h-20 sm:h-16'>
+				<div className='absolute top-1/2 -translate-y-1/2 left-6 right-6'>
+					<div className='h-2 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 dark:from-red-400/75 dark:via-yellow-400/50 dark:to-green-400/75 rounded-full -mb-2 blur-lg' />
+					<div className='h-2 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 dark:from-red-400 dark:via-yellow-400 dark:to-green-400 rounded-full' />
+				</div>
 				{rooms.map((room, index) => {
 					if (!room.projected) return
 
 					return (
 						<motion.div
 							key={index}
-							className='absolute rounded-full top-1/2 -translate-y-1/2 right-4 h-6 w-6 bg-black dark:bg-white flex items-center justify-center'
+							className='absolute rounded-full top-1/2 -translate-y-1/2 right-4 h-6 w-6 bg-blue-500 dark:bg-blue-400 backdrop-blur-md flex items-center justify-center shadow-brand-primary-light dark:shadow-brand-primary-dark'
 							initial={{
 								left: '100%',
 								x: '-50%',

@@ -2,8 +2,6 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Minus, Plus } from 'lucide-react'
 import useRooms from '../../hooks/useRooms'
 import IconButton from '../buttons/IconButton'
-import fixedDecimals from '../../utils/fixedDecimals'
-import AnimatedNumbers from '../subcomponents/AnimatedNumbers'
 import Stat from '../subcomponents/Stat'
 import IconButtonLarge from '../buttons/IconButtonLarge'
 

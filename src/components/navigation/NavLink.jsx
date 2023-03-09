@@ -37,7 +37,7 @@ export default function NavLink({ thisPage, currentPage, setPage }) {
 					transition={{ type: 'spring', stiffness: 300, damping: 30 }}
 				/>
 			)} */}
-			<div className='absolute pointer-events-none flex justify-center items-center h-12 w-12 overflow-hidden rounded-3xl'>
+			<div className='absolute pointer-events-none flex justify-center items-center h-full aspect-square overflow-hidden rounded-2xl'>
 				<AnimatePresence>
 					{isActive && (
 						<motion.div

@@ -111,6 +111,7 @@ export default function RoomsSettings({ sortList, setSortList }) {
 					setVariable={setAirChange}
 					label='Luftskifte'
 					step={0.1}
+					min={0.1}
 				/>
 				<Setting
 					variable={variables.ratio}
@@ -133,7 +134,7 @@ export default function RoomsSettings({ sortList, setSortList }) {
 							animate={{ opacity: 1 }}
 							exit={{ opacity: 0 }}
 						>
-							<Filter />
+							<Filter className='text-blue-500 fill-blue-500/25 dark:text-blue-400 dark:fill-blue-400/25' />
 						</motion.div>
 					) : (
 						<motion.div

@@ -42,7 +42,7 @@ export default function Navigation() {
 			<motion.div
 				ref={navRef}
 				layout
-				className={`p-1 brand-bg-base shadow-brand-base-light dark:shadow-brand-base-dark rounded-4xl w-full sm:w-auto flex items-center gap-2 ${
+				className={`p-2 brand-bg-base shadow-brand-base-light dark:shadow-brand-base-dark rounded-4xl w-full sm:w-auto flex items-center gap-2 ${
 					draggingPosition !== false ? 'pointer-events-none' : ''
 				}`}
 			>
@@ -52,7 +52,7 @@ export default function Navigation() {
 					setPosition={setPosition}
 					setDrag={setDraggingPosition}
 				/>
-				<button className='flex items-center gap-2 text-slate-600 dark:text-slate-300 px-3 rounded-3xl hover:bg-slate-900/5 dark:hover:bg-slate-50/5 h-full pr-6 transition'>
+				<button className='flex items-center gap-2 text-slate-600 dark:text-slate-300 px-3 rounded-2xl hover:bg-slate-900/5 dark:hover:bg-slate-50/5 h-full pr-6 transition'>
 					<Command />
 					<div>
 						<p className='text-sm leading-none font-semibold'>Command</p>
