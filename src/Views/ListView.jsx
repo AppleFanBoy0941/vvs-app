@@ -16,7 +16,7 @@ export default function ListView() {
 					initial={{ opacity: 0, backdropFilter: 'blur(0rem)' }}
 					animate={{ opacity: 1, backdropFilter: 'blur(2rem)' }}
 					exit={{ opacity: 0, backdropFilter: 'blur(0rem)' }}
-					className='h-screen w-screen fixed bg-slate-50/50 dark:bg-slate-900/50 flex justify-center items-start pt-6 sm:pt-12 px-6'
+					className='h-screen w-screen fixed bg-slate-50/50 dark:bg-slate-900/50 flex justify-center items-start pt-6 lg:pt-12 px-6'
 				>
 					{/* <div className='absolute top-2 left-2 flex items-center gap-2'>
 						<button

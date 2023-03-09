@@ -11,7 +11,7 @@ export default function Setting({
 				fullWidth
 					? 'bg-slate-100/75 dark:bg-slate-600/75'
 					: 'bg-slate-100/25 dark:bg-slate-600/25'
-			} backdrop-blur-md shadow-brand-base-light dark:shadow-brand-base-dark rounded-4xl`}
+			} backdrop-blur-lg shadow-brand-base-light dark:shadow-brand-base-dark rounded-4xl`}
 		>
 			<span className='uppercase text-xs font-semibold leading-none text-slate-500'>
 				{label}

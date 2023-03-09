@@ -1,5 +1,11 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { Filter, FilterX, MoreHorizontal } from 'lucide-react'
+import {
+	ArrowUpCircle,
+	Filter,
+	FilterX,
+	MoreHorizontal,
+	Sliders,
+} from 'lucide-react'
 import { useContext, useState } from 'react'
 import Setting from '../components/subcomponents/Setting'
 import { VariablesContext } from '../contexts/VariablesProvider'
@@ -53,7 +59,36 @@ export default function RoomsSettings({ sortList, setSortList }) {
 				onClick={() => setShowSettings(!showSettings)}
 				className='lg:hidden h-14 w-14 rounded-4xl bg-slate-100/25 dark:bg-slate-600/25 shadow-brand-base-light dark:shadow-brand-base-dark flex justify-center items-center text-slate-600 dark:text-slate-400 shrink-0'
 			>
-				<MoreHorizontal />
+				<AnimatePresence mode='popLayout'>
+					{showSettings ? (
+						<motion.div
+							key={1}
+							initial={{ rotate: 180, opacity: 0 }}
+							animate={{ rotate: 0, opacity: 1, transition: { delay: 0.25 } }}
+							exit={{ rotate: -180, opacity: 0 }}
+						>
+							<ArrowUpCircle />
+						</motion.div>
+					) : (
+						<motion.div
+							key={2}
+							initial={{ scale: 0.5, opacity: 0 }}
+							animate={{
+								scale: 1,
+								opacity: 1,
+								transition: {
+									delay: 0.25,
+									type: 'spring',
+									stiffness: 300,
+									damping: 15,
+								},
+							}}
+							exit={{ scale: 0.5, opacity: 0, transition: { ease: 'easeIn' } }}
+						>
+							<Sliders />
+						</motion.div>
+					)}
+				</AnimatePresence>
 			</motion.button>
 			<AnimatePresence mode='popLayout'>
 				{showSettings && (
